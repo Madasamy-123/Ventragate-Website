@@ -1,14 +1,47 @@
-import expertImg from '../assets/images/experts-img.png'
+import expertImg from "../assets/images/experts-img.png";
+
 export default function CTA() {
   return (
-    <section className="py-20 bg-white max-w-[120rem]">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="py-20 bg-white">
+      
+      {/* OUTER CONTAINER */}
+      <div
+        className="
+          max-w-[120rem]
+          mx-auto
+          px-4
+          sm:px-6
+          md:px-10
+          lg:px-[7.5rem]
+          xl:px-[10rem]
+          2xl:px-[13.125rem]
+        "
+      >
         
-        {/* CTA Card */}
-        <div className="grid grid-cols-1 md:grid-cols-2 overflow-hidden rounded-2xl shadow-xl">
+        {/* CTA CARD */}
+        <div
+          className="
+            flex
+            flex-col
+            lg:flex-row
+            overflow-hidden
+            rounded-2xl
+            shadow-xl
+            lg:h-[22.5rem]   /* 360px only on laptop+ */
+          "
+        >
           
           {/* LEFT IMAGE */}
-          <div className="h-full">
+          <div
+            className="
+              w-full
+              h-[14rem]
+              sm:h-[18rem]
+              lg:w-[31.3125rem]
+              lg:h-[22.5rem]
+              flex-shrink-0
+            "
+          >
             <img
               src={expertImg}
               alt="Professional consultant"
@@ -17,27 +50,22 @@ export default function CTA() {
           </div>
 
           {/* RIGHT CONTENT */}
-          <div className="relative bg-[#0b3f3c] text-white p-10 md:p-14 flex flex-col ">
-            
-            {/* subtle background pattern */}
-            {/* <div className="absolute right-0 bottom-0 opacity-20">
-              <svg width="180" height="180" viewBox="0 0 200 200">
-                <path
-                  d="M0 100 C50 80, 150 120, 200 100"
-                  stroke="#5eead4"
-                  strokeWidth="2"
-                  fill="none"
-                />
-                <path
-                  d="M0 130 C60 110, 140 150, 200 130"
-                  stroke="#5eead4"
-                  strokeWidth="2"
-                  fill="none"
-                />
-              </svg>
-            </div> */}
-
-            <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+          <div
+            className="
+              flex-1
+              bg-[#0b3f3c]
+              text-white
+              p-8
+              sm:p-10
+              md:p-12
+              lg:p-14
+              flex
+              flex-col
+              justify-center
+              lg:h-[22.5rem]
+            "
+          >
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">
               Ready to Transform Your IT?
             </h2>
 
@@ -46,7 +74,25 @@ export default function CTA() {
               technology.
             </p>
 
-            <button onClick={() => document.getElementById('contact').scrollIntoView({behavior: 'smooth'})} className="w-fit bg-teal-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-400 transition shadow-md">
+            <button
+              onClick={() =>
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+              className="
+                w-fit
+                bg-teal-500
+                text-white
+                px-8
+                py-3
+                rounded-lg
+                font-semibold
+                hover:bg-teal-400
+                transition
+                shadow-md
+              "
+            >
               Talk to Experts
             </button>
           </div>
