@@ -21,7 +21,15 @@ export default function Industries() {
 
   return (
     <section className="py-16 md:py-24 bg-white overflow-hidden max-w-[120rem]">
-      <div className="2xl:px-[13.125rem] mx-auto px-6">
+      <div
+  className="
+    mx-auto
+    px-6
+    lg:px-[7.5rem]
+    xl:px-[10rem]
+    2xl:px-[13.125rem]
+  "
+>
 
         {/* Heading */}
         <div className="text-center mb-14">
@@ -49,7 +57,7 @@ export default function Industries() {
           <div className="flex gap-6 industries-marquee">
 
             {[...industries, ...industries].map((industry, index) => (
-              <div key={index} className="min-w-[17.5rem] md:min-w-[20rem]">
+              <div key={index} className="w-[17.5rem] shrink-0 md:min-w-[20rem]">
                 <div className="relative h-64 rounded-xl overflow-hidden border border-gray-200 group">
                   <img
                     src={industry.image}
