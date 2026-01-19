@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className=" relative w-full flex justify-center overflow-hidden"
+      className=" relative w-full flex justify-center overflow-hidden bg-white"
     >
       {/* SVG BACKGROUND */}
       <img
@@ -24,6 +24,73 @@ export default function Hero() {
     pointer-events-none
   "
       />
+
+      {/* LEFT SOFT SHADOW */}
+<div
+  aria-hidden
+  className="
+    absolute
+    left-[-15%]
+    top-1/2
+    -translate-y-1/2
+    rounded-full
+    bg-teal-300
+    blur-[120px]
+    z-[1]
+
+    /* PHONE */
+    opacity-0
+
+    /* TABLET / iPAD */
+    sm:opacity-10
+    sm:w-[24rem]
+    sm:h-[24rem]
+
+    /* LAPTOP */
+    lg:opacity-15
+    lg:w-[30rem]
+    lg:h-[30rem]
+
+    /* DESKTOP / MONITOR */
+    2xl:opacity-25
+    2xl:w-[40rem]
+    2xl:h-[40rem]
+  "
+/>
+
+      {/* RIGHT SOFT SHADOW */}
+<div
+  aria-hidden
+  className="
+    absolute
+    right-[-15%]
+    top-1/2
+    -translate-y-1/2
+    rounded-full
+    bg-teal-300
+    blur-[120px]
+    z-[1]
+
+    /* PHONE */
+    opacity-0
+
+    /* TABLET / iPAD */
+    sm:opacity-10
+    sm:w-[24rem]
+    sm:h-[24rem]
+
+    /* LAPTOP */
+    lg:opacity-10
+    lg:w-[30rem]
+    lg:h-[30rem]
+
+    /* DESKTOP / MONITOR */
+    2xl:opacity-15
+    2xl:w-[40rem]
+    2xl:h-[40rem]
+  "
+/>
+
       {/* MAIN CONTAINER */}
       <div
         className="
