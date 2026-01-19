@@ -47,11 +47,12 @@ export default function TrustedBy() {
       </p>
 
       {/* Gradient fade – LEFT */}
-      {/* LEFT – extra white */}
-      <div className="pointer-events-none absolute left-0 top-0 h-full w-[13.125rem] bg-gradient-to-r from-white via-white to-transparent z-10" />
+{/* LEFT gradient – hide on mobile */}
+<div className="pointer-events-none absolute left-0 top-0 h-full w-[13.125rem] bg-gradient-to-r from-white via-white to-transparent z-10 hidden md:block" />
 
-      {/* RIGHT – extra white */}
-      <div className="pointer-events-none absolute right-0 top-0 h-full w-[13.125rem] bg-gradient-to-l from-white via-white to-transparent z-10" />
+{/* RIGHT gradient – hide on mobile */}
+<div className="pointer-events-none absolute right-0 top-0 h-full w-[13.125rem] bg-gradient-to-l from-white via-white to-transparent z-10 hidden md:block" />
+
 
 
       {/* Logos */}
