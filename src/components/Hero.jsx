@@ -1,12 +1,29 @@
 import heroImg from "../assets/images/hero-img.png";
 import groupImg from "../assets/images/Group-img.png";
+import heroBg from "../assets/logos/heropg.svg";
+
 
 export default function Hero() {
   return (
     <section
       id="hero"
-      className=" w-full flex justify-center"
+      className=" relative w-full flex justify-center overflow-hidden"
     >
+      {/* SVG BACKGROUND */}
+      <img
+        src={heroBg}
+        alt="heropage"
+        aria-hidden
+        className="
+    absolute
+    inset-0
+    w-full
+    h-full
+    object-cover
+    z-0
+    pointer-events-none
+  "
+      />
       {/* MAIN CONTAINER */}
       <div
         className="
@@ -16,7 +33,8 @@ export default function Hero() {
           flex
           flex-col
           lg:flex-row
-         
+          relative
+          z-10
           px-4 sm:px-6 md:px-10
           lg:px-[7.5rem]
           xl:px-[10rem]
