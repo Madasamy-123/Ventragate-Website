@@ -4,7 +4,10 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/Ventragate-Website/',
   plugins: [react(),
-    tailwindcss()
+    tailwindcss(),
+    
   ],
 })
+
