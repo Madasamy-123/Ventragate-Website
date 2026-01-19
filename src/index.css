@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+
+html {
+  overflow-x: hidden;
+}
+
+/* html {
+  scroll-snap-type: y mandatory;
+} */
