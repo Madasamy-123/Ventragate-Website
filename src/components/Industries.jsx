@@ -57,14 +57,14 @@ export default function Industries() {
           <div className="flex gap-6 industries-marquee">
 
             {[...industries, ...industries].map((industry, index) => (
-              <div key={index} className="w-[17.5rem] shrink-0 md:min-w-[20rem]">
-                <div className="relative h-64 rounded-xl overflow-hidden border border-gray-200 group">
+              <div key={index} className="w-[18.5rem] shrink-0 md:min-w-[18.75rem]">
+                <div className="relative h-[24.5625rem] w-[18.75rem] rounded-xl overflow-hidden">
                   <img
                     src={industry.image}
                     alt={industry.name}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                  <div className="absolute inset-0 from-black/70 to-transparent"></div>
       <div className="absolute bottom-0 left-0 right-0 flex justify-center pb-6 text-white z-10">
   <h3 className="text-2xl font-semibold text-center">
     {industry.name}
