@@ -1,4 +1,5 @@
 import expertImg from "../assets/images/experts-img.png";
+import ctaBgLogo from "../assets/logos/cta-logo.svg";
 
 export default function CTA() {
   return (
@@ -21,6 +22,7 @@ export default function CTA() {
         {/* CTA CARD */}
         <div
           className="
+          relative
             flex
             flex-col
             lg:flex-row
@@ -65,6 +67,23 @@ export default function CTA() {
               lg:h-[22.5rem]
             "
           >
+
+             {/*  BACKGROUND LOGO */}
+            <img
+              src={ctaBgLogo}
+              alt="lines"
+              aria-hidden
+              className="
+               hidden sm:block  
+                absolute
+                right-0
+                bottom-0
+                w-[15rem]
+                opacity-20
+                pointer-events-none
+              "
+            />
+
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">
               Ready to Transform Your IT?
             </h2>

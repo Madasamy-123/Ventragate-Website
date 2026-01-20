@@ -23,17 +23,26 @@ export default function Footer() {
           "
         >
           {/* FLEX CONTENT */}
-          <div className="flex flex-wrap gap-16  md:justify-between ">
+          <div
+  className="
+    grid
+    grid-cols-1
+    sm:grid-cols-2
+    lg:grid-cols-5
+    gap-y-12
+    gap-x-12
+  "
+>
 
             {/* BRAND */}
-            <div className="w-full max-w-sm space-y-4 ">
+            <div className="space-y-4 lg:col-span-2 max-w-sm">
   <img
     src={ventragateLogo}
     alt="VentraGate"
     className="h-8 w-auto"
   />
 
-  <p className="text-sm  text-left w-[22rem] ">
+  <p className="text-sm  text-left max-w-[22rem] ">
     From cloud and infrastructure to security and automation,
     VentraGate helps businesses run faster, safer, and smarter.
   </p>
@@ -50,7 +59,7 @@ export default function Footer() {
 
 
             {/* SOLUTIONS */}
-            <div className="w-full md:w-auto mx-auto md:mx-0">
+            <div className="lg:col-span-1" >
               <h3 className="text-gray-900 font-semibold mb-4">Solutions</h3>
               <ul className="space-y-2 text-sm">
                 <li>Cloud Solutions</li>
@@ -61,7 +70,7 @@ export default function Footer() {
             </div>
 
             {/* SERVICES */}
-            <div className="w-full md:w-auto mx-auto md:mx-0">
+            <div className="lg:col-span-1">
               <h3 className="text-gray-900 font-semibold mb-4">Services</h3>
               <ul className="space-y-2 text-sm">
                 <li>Consulting & Strategy</li>
@@ -72,7 +81,7 @@ export default function Footer() {
             </div>
 
             {/* COMPANY */}
-            <div className="w-full md:w-auto mx-auto md:mx-0">
+            <div className="lg:col-span-1" >
               <h3 className="text-gray-900 font-semibold mb-4">Company</h3>
               <ul className="space-y-2 text-sm">
                 <li>About Us</li>

@@ -32,7 +32,7 @@ export default function Solutions() {
   ];
 
   return (
-    <section id="solutions" className="py-16 md:py-24 bg-gray-50 max-w-[1920px]">
+    <section id="solutions" className="py-16 md:py-24  max-w-[1920px]">
       <div
         className="
     w-full

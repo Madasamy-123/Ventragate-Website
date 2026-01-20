@@ -20,14 +20,24 @@ export default function Navbar() {
       </div>
 
       {/* Navbar */}
-      <nav
-        className="
-    h-[5.9375rem] max-w-[120rem] mx-auto
-    flex items-center justify-between
-    px-4 sm:px-6 md:px-12 lg:px-[13.125rem]
+ <nav
+  className="
+    h-[5.9375rem]
+    max-w-[120rem]
+    mx-auto
+    flex
+    items-center
+    justify-between
     bg-white
+
+    px-4
+    sm:px-6
+    md:px-10
+    lg:px-[7.5rem]      /* LAPTOP */
+    xl:px-[10rem]       /* DESKTOP */
+    2xl:px-[13.125rem]  /* MONITOR ONLY */
   "
-      >
+>
         {/* Logo */}
         <img
           src={logo}
@@ -37,7 +47,8 @@ export default function Navbar() {
         />
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-8 text-gray-800 font-medium">
+        {/* <ul className="hidden md:flex gap-8 text-gray-800 font-medium"> */}
+          <ul className="hidden lg:flex gap-6 xl:gap-8 text-gray-800 font-medium">
           <li className="hover:text-teal-600 cursor-pointer">
             <a href="#hero">Home</a>
           </li>

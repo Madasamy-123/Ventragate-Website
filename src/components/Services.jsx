@@ -32,9 +32,9 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-16 md:py-44 bg-gray-50 max-w-[1920px]">
-      <div className=" 2xl:px-[13.125rem] mx-auto px-6">
-
+    <section id="services" className="py-16 md:py-44 max-w-[1920px]">
+      <div className=" mx-auto px-[1.5rem] md:px-[3rem] lg:px-[5rem] xl:px-[8rem] 2xl:px-[13.125rem] mx-auto px-6">
+ 
         {/* Heading */}
         <div className="text-center mb-16">
           <h3
