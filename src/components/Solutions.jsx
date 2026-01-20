@@ -90,7 +90,7 @@ export default function Solutions() {
 
               {/* Content */}
               <div className="p-6 text-center">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-['Montserrat'] font-semibold text-gray-900 mb-2">
                   {solution.title}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">

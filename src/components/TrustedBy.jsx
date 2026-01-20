@@ -42,7 +42,7 @@ export default function TrustedBy() {
 
   return (
     <section className="bg-white py-12 relative overflow-hidden max-w-[120rem] h-[14.3125rem]">
-      <p className="text-center text-black mb-8 font-montserrat text-[1.25rem]">
+      <p className="text-center text-black mb-8 font-['montserrat'] font-medium text-[1.25rem]">
         Trusted by growing enterprises across industries
       </p>
 

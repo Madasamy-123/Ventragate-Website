@@ -73,7 +73,7 @@ export default function Navbar() {
           onClick={() =>
             document.getElementById("contact").scrollIntoView({ behavior: "smooth" })
           }
-          className="border border-gray-700 px-4 md:px-6 py-2 rounded-lg font-semibold hover:bg-gray-900 hover:text-white transition text-sm md:text-base "
+          className="border border-gray-700 px-4 md:px-6 py-2 rounded-lg font-['Montserrat'] font-semibold hover:bg-gray-900 hover:text-white transition text-sm md:text-base "
         >
           Let's Talk
         </button>

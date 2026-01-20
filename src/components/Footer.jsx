@@ -48,10 +48,10 @@ export default function Footer() {
   </p>
 
   <div className="flex gap-3 pt-2">
-    <a className="w-9 h-9 flex items-center justify-center rounded-full hover:bg-teal-600 transition">
+    <a  className="w-9 h-9 flex items-center justify-center rounded-full hover:bg-teal-600 transition">
       <img src={instagramIcon} alt="Instagram" className="w-9 h-9" />
     </a>
-    <a className="w-9 h-9 flex items-center justify-center rounded-full hover:bg-teal-600 transition">
+    <a href="https://www.linkedin.com/company/ventragate/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 flex items-center justify-center rounded-full hover:bg-teal-600 transition">
       <img src={linkedinIcon} alt="LinkedIn" className="w-9 h-9" />
     </a>
   </div>
@@ -97,7 +97,7 @@ export default function Footer() {
       {/* FULL-WIDTH COPYRIGHT BAR */}
       <div className="w-full bg-teal-600">
         <p className="text-center text-white text-sm py-4">
-          © 2025 VentraGate Technologies LLC. All rights reserved.
+          © 2026 Copyright By VentraGate Technologies LLP
         </p>
       </div>
 

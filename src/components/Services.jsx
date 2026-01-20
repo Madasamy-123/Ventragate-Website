@@ -78,7 +78,7 @@ export default function Services() {
 
               {/* Title */}
               <h3
-                className="text-lg font-semibold text-gray-900 mb-3
+                className="text-lg font-['Montserrat'] font-semibold text-gray-900 mb-3
                transition group-hover:text-white"
               >
                 {service.title}

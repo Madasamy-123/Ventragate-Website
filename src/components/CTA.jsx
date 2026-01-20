@@ -4,7 +4,7 @@ import ctaBgLogo from "../assets/logos/cta-logo.svg";
 export default function CTA() {
   return (
     <section className="py-20 bg-white">
-      
+
       {/* OUTER CONTAINER */}
       <div
         className="
@@ -14,11 +14,10 @@ export default function CTA() {
           sm:px-6
           md:px-10
           lg:px-[7.5rem]
-          xl:px-[10rem]
           2xl:px-[13.125rem]
         "
       >
-        
+
         {/* CTA CARD */}
         <div
           className="
@@ -32,15 +31,15 @@ export default function CTA() {
             lg:h-[22.5rem]   /* 360px only on laptop+ */
           "
         >
-          
+
           {/* LEFT IMAGE */}
           <div
             className="
               w-full
               h-[14rem]
               sm:h-[18rem]
-              lg:w-[31.3125rem]
-              lg:h-[22.5rem]
+              xl:w-[31.3125rem]
+              xl:h-[22.5rem]
               flex-shrink-0
             "
           >
@@ -65,10 +64,12 @@ export default function CTA() {
               flex-col
               justify-center
               lg:h-[22.5rem]
+              flex-1
+              xl:w-[45.6875rem]
             "
           >
 
-             {/*  BACKGROUND LOGO */}
+            {/*  BACKGROUND LOGO */}
             <img
               src={ctaBgLogo}
               alt="lines"
@@ -84,9 +85,21 @@ export default function CTA() {
               "
             />
 
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">
+            <h2
+              className="
+    text-2xl
+    sm:text-3xl
+    md:text-[32px]
+    lg:text-[28px]   /* laptop */
+    xl:text-[40px]   /* monitor */
+    font-['Montserrat']
+    font-semibold
+    mb-4
+  "
+            >
               Ready to Transform Your IT?
             </h2>
+
 
             <p className="text-teal-100 mb-8 max-w-md leading-relaxed">
               Let’s discuss how we can help your business grow with the right

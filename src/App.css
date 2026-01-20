@@ -29,3 +29,7 @@
 .industries-marquee {
   animation: industries-scroll 3s linear infinite;
 }
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
