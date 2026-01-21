@@ -83,7 +83,7 @@ Error generating stack: `+a.message+`
             2xl:w-[48.6875rem]\r
             pt-16\r
             lg:pt-[3rem]\r
-            xl:pt-[3rem]\r
+            xl:pt-[6.25rem]\r
             text-center lg:text-left\r
           `,children:[o.jsx("span",{className:"inline-block mb-5 px-4 py-1 text-sm rounded-full bg-teal-100 text-teal-700",children:"Tailored IT, DevOps, and security solutions"}),o.jsxs("h1",{className:`\r
               text-[2rem]\r
@@ -122,7 +122,7 @@ Error generating stack: `+a.message+`
             justify-center lg:justify-end\r
             pt-12\r
             lg:pt-[5.625rem]\r
-            xl:pt-[3rem]\r
+            xl:pt-[6.25rem]\r
           `,children:o.jsx("img",{src:io,alt:"IT Expert",className:`\r
               w-full\r
               max-w-[20rem]\r
