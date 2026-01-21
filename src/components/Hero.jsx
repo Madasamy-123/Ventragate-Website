@@ -80,34 +80,31 @@ export default function Hero() {
     sm:h-[24rem]
 
     /* LAPTOP */
-    lg:opacity-10
+    lg:opacity-15
     lg:w-[30rem]
     lg:h-[30rem]
 
     /* DESKTOP / MONITOR */
-    2xl:opacity-15
+    2xl:opacity-25
     2xl:w-[40rem]
     2xl:h-[40rem]
   "
 />
 
       {/* MAIN CONTAINER */}
-      <div
-        className="
-          w-full
-          2xl:w-[120rem]
-          min-h-[49.5625rem]
-          flex
-          flex-col
-          lg:flex-row
-          relative
-          z-10
-          px-4 sm:px-6 md:px-10
-          lg:px-[7.5rem]
-          xl:px-[10rem]
-          2xl:px-[13.125rem]
-        "
-      >
+<div
+  className="
+    w-full
+    2xl:w-[120rem]
+    min-h-[49.5625rem]
+    flex flex-col lg:flex-row
+    relative z-10
+    lg:px-[4rem]        /* laptop → 64px */
+    xl:px-[6rem]        /* big laptop / small monitor → 96px edge */
+    2xl:px-[13.125rem]  /* monitor → 210px (UNCHANGED) */
+  "
+>
+
         {/* LEFT CONTENT */}
         <div
           className="
@@ -115,8 +112,8 @@ export default function Hero() {
             lg:w-1/2
             2xl:w-[48.6875rem]
             pt-16
-            lg:pt-[5.625rem]
-            xl:pt-[6.25rem]
+            lg:pt-[3rem]
+            xl:pt-[3rem]
             text-center lg:text-left
           "
         >
@@ -208,7 +205,7 @@ export default function Hero() {
             justify-center lg:justify-end
             pt-12
             lg:pt-[5.625rem]
-            xl:pt-[6.25rem]
+            xl:pt-[3rem]
           "
         >
           <img
@@ -220,6 +217,7 @@ export default function Hero() {
               sm:max-w-[26.25rem]
               md:max-w-[32.5rem]
               lg:max-w-[40.625rem]
+              lg:h-[42rem]
               2xl:w-[41rem]
               2xl:h-[43.3125rem]
               object-cover

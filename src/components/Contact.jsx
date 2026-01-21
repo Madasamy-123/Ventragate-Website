@@ -42,7 +42,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">CALL US</h3>
-                <p className="text-gray-600">+1 (555) 123-4567</p>
+                <p className="text-gray-600">+1 (806) 410 005</p>
               </div>
             </div>
 
@@ -55,11 +55,12 @@ export default function Contact() {
                 <div className="text-gray-600 space-y-2">
                   <div>
                     <p className="font-medium">USA</p>
-                    <p className="text-sm">123 Tech Park, San Francisco, CA 94107</p>
+                    <p className="text-sm">VentraGate Technologies LLC, PO 4321, River Edge, NJ USA - 07661
+                    </p>
                   </div>
                   <div>
                     <p className="font-medium">INDIA</p>
-                    <p className="text-sm">456 IT Hub, Bangalore, KA 560001</p>
+                    <p className="text-sm">VentraGate Technologies LLP, 39 MuthuNagar, Coimbatore, TN India - 641031 IT Hub, Bangalore, KA 560001</p>
                   </div>
                 </div>
               </div>

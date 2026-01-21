@@ -38,7 +38,7 @@ export default function CTA() {
               w-full
               h-[14rem]
               sm:h-[18rem]
-              xl:w-[31.3125rem]
+              xl:w-[25.3125rem]
               xl:h-[22.5rem]
               flex-shrink-0
             "
