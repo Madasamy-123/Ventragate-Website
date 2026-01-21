@@ -95,8 +95,9 @@ export default function Footer() {
       </div>
 
       {/* FULL-WIDTH COPYRIGHT BAR */}
-      <div className="w-full bg-teal-600">
-        <p className="text-center text-white text-sm py-4">
+<div className="w-full bg-teal-600 h-[2.5rem] flex items-center justify-center">
+        <p className="text-center text-white text-sm text-[0.75rem]">
+          
           © 2026 Copyright By VentraGate Technologies LLP
         </p>
       </div>
