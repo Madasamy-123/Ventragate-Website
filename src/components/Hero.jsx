@@ -113,7 +113,7 @@ export default function Hero() {
             2xl:w-[48.6875rem]
             pt-16
             lg:pt-[3rem]
-            xl:pt-[3rem]
+            xl:pt-[6.25rem]
             text-center lg:text-left
           "
         >
@@ -205,7 +205,7 @@ export default function Hero() {
             justify-center lg:justify-end
             pt-12
             lg:pt-[5.625rem]
-            xl:pt-[3rem]
+            xl:pt-[6.25rem]
           "
         >
           <img
