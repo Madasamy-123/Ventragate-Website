@@ -35,7 +35,7 @@ export default function Industries() {
         <div className="text-center mb-14">
 <h3
   className="
-    text-[2.5rem]          /* 40px */
+    text-[2rem]          /* 40px */
     md:text-[2.75rem]      /* 44px (optional for larger screens) */
     leading-[3.25rem]
     tracking-[0]
@@ -48,7 +48,7 @@ export default function Industries() {
 >Industries We Support
 </h3>
           <p className="text-gray-500 text-lg">
-            Technology solutions tailored to meet business demands
+            Technology solutions tailored to diverse business domains
           </p>
         </div>
 

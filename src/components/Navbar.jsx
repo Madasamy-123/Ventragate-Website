@@ -1,26 +1,45 @@
 import logo from "../assets/logos/ventragate-logo.svg";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+  const handleScroll = () => {
+    if (window.scrollY > lastScrollY) {
+      // scrolling DOWN
+      setShowNavbar(false);
+    } else {
+      // scrolling UP
+      setShowNavbar(true);
+    }
+    setLastScrollY(window.scrollY);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, [lastScrollY]);
+
   return (
-    <header className="w-full sticky top-0 z-50">
+    <header className={`w-full sticky top-0 z-50 transition-transform duration-300 ease-in-out ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}>
       {/* Top bar */}
       <div
         className="
           bg-teal-600 text-white
-          text-[0.875rem] md:text-[1rem]
-          h-auto md:h-[2.3125rem]
+          text-[0.75rem] md:text-[0.875rem]
+          h-auto md:h-[2rem]
           py-2 md:py-0
           flex items-center justify-center
           font-normal
         "
-        style={{ fontFamily: "'Open Sans', sans-serif" }}
       >
         Free cloud & infrastructure assessment for growing enterprises →
       </div>
 
       {/* Navbar */}
-<nav
-  className="
+      <nav
+        className="
     bg-white
     h-[5.9375rem]
     max-w-[120rem]
@@ -32,7 +51,7 @@ export default function Navbar() {
     px-[clamp(3.75rem,6vw,9rem)]
     min-[1920px]:px-[13.125rem]
   "
->
+      >
         {/* Logo */}
         <img
           src={logo}
