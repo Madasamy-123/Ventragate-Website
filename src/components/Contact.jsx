@@ -56,7 +56,7 @@ export default function Contact() {
                   <div>
                     <p className="font-medium">USA</p>
                     <p className="text-sm">VentraGate Technologies LLC, PO 4321, River Edge, NJ USA - 07661
-                    </p>
+                    </p>    
                   </div>
                   <div>
                     <p className="font-medium">INDIA</p>
