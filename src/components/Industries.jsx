@@ -62,7 +62,7 @@ export default function Industries() {
                   <img
                     src={industry.image}
                     alt={industry.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 rounded-3xl"
                   />
                   <div className="absolute inset-0 from-black/70 to-transparent"></div>
       <div className="absolute bottom-0 left-0 right-0 flex justify-center pb-6 text-white z-10">
