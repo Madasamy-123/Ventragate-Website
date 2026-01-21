@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className=" relative w-full flex justify-center overflow-hidden bg-white"
+      className=" relative w-full flex justify-center overflow-hidden bg-white scroll-mt-[8rem]"
     >
       {/* SVG BACKGROUND */}
       <img
