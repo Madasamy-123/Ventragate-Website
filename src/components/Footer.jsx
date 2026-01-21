@@ -48,11 +48,14 @@ export default function Footer() {
   </p>
 
   <div className="flex gap-3 pt-2">
-    <a  className="w-9 h-9 flex items-center justify-center rounded-full hover:bg-teal-600 transition">
-      <img src={instagramIcon} alt="Instagram" className="w-9 h-9" />
-    </a>
-    <a href="https://www.linkedin.com/company/ventragate/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 flex items-center justify-center rounded-full hover:bg-teal-600 transition">
-      <img src={linkedinIcon} alt="LinkedIn" className="w-9 h-9" />
+<a className="group w-9 h-9 flex items-center justify-center rounded-full bg-teal-100 hover:bg-teal-600 transition">
+  <img
+    src={instagramIcon}
+    className="w-5 h-5 transition group-hover:brightness-0 group-hover:invert"
+  />
+</a>
+    <a href="https://www.linkedin.com/company/ventragate/" target="_blank" rel="noopener noreferrer" className="group w-9 h-9 flex items-center justify-center rounded-full  bg-teal-100 hover:bg-teal-600 transition">
+      <img src={linkedinIcon} alt="LinkedIn" className="w-5 h-5 transition group-hover:brightness-0 group-hover:invert" />
     </a>
   </div>
 </div>
