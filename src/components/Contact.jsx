@@ -60,7 +60,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="font-medium">INDIA</p>
-                    <p className="text-sm">VentraGate Technologies LLP, 39 MuthuNagar, Coimbatore, TN India - 641031 IT Hub, Bangalore, KA 560001</p>
+                    <p className="text-sm">VentraGate Technologies , Third floor , No.7, YNOT Towers, Sri Sangara Nagar, near KCT Tech Park, Saravanampatti, Coimbatore, Tamil Nadu 641035</p>
                   </div>
                 </div>
               </div>

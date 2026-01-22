@@ -9,27 +9,12 @@
   }
 }
 
-/* Animation 2 */
-@keyframes industries-scroll {
-  0% {
-    transform: translateX(0);
-  }
 
-  100% {
-    transform: translateX(-50%);
-  }
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Class for scroll */
 .animate-scroll {
   animation: scroll 20s linear infinite;
-}
-
-/* Class for industries */
-.industries-marquee {
-  animation: industries-scroll 3s linear infinite;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
 }
