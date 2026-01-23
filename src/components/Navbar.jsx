@@ -6,20 +6,20 @@ export default function Navbar() {
   const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
-  const handleScroll = () => {
-    if (window.scrollY > lastScrollY) {
-      // scrolling DOWN
-      setShowNavbar(false);
-    } else {
-      // scrolling UP
-      setShowNavbar(true);
-    }
-    setLastScrollY(window.scrollY);
-  };
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        // scrolling DOWN
+        setShowNavbar(false);
+      } else {
+        // scrolling UP
+        setShowNavbar(true);
+      }
+      setLastScrollY(window.scrollY);
+    };
 
-  window.addEventListener("scroll", handleScroll);
-  return () => window.removeEventListener("scroll", handleScroll);
-}, [lastScrollY]);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
 
   return (
     <header className={`w-full sticky top-0 z-50 transition-transform duration-300 ease-in-out ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}>
@@ -38,8 +38,8 @@ export default function Navbar() {
       </div>
 
       {/* Navbar */}
-      <nav
-        className="
+<nav
+  className="
     bg-white
     h-[5.9375rem]
     max-w-[120rem]
@@ -47,16 +47,19 @@ export default function Navbar() {
     flex
     items-center
     justify-between
-    gap-10 sm:gap-4 lg:gap-0
-    px-[clamp(3.75rem,6vw,9rem)]
+
+    px-[clamp(1rem,4vw,9rem)]   /* unified padding */
     min-[1920px]:px-[13.125rem]
   "
-      >
+>
+
         {/* Logo */}
         <img
           src={logo}
           alt="VentraGate"
-          className="h-[2.5rem] w-[11.625rem] mb-2 sm:mb-0 cursor-pointer"
+          className="h-[2rem] w-[9.5rem]
+          sm:h-[2.5rem] sm:w-[11.625rem] 
+          cursor-pointer"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         />
 
@@ -90,14 +93,16 @@ export default function Navbar() {
           }
           className="
             border border-gray-700
-            px-4 md:px-6
-            py-2
-            rounded-lg
+            px-3 md:px-6
+            sm:px-4 sm:py-2
+            py-1.5
+            text-xs sm:text-sm md:text-base
+            whitespace-nowrap
+            rounded-md sm:rounded-lg
             font-['Montserrat']
             font-semibold
             hover:bg-gray-900 hover:text-white
             transition
-            text-sm md:text-base
           "
         >
           Let's Talk
