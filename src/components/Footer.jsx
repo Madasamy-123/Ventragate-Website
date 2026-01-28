@@ -82,7 +82,7 @@ export default function Footer() {
               <h3 className="text-gray-900 font-semibold mb-4">Company</h3>
               <ul className="space-y-2 text-sm">
                 <li className="hover:text-teal-600 cursor-pointer"><a href="#about">About Us</a></li>
-                <li className="hover:text-teal-600 cursor-pointer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfSL4IEY99-mw1FqA3Bo9DSfi5N8nPtyWMgeg0lwgmU4JHGnQ/viewform">Careers</a></li>
+                <li className="hover:text-teal-600 cursor-pointer"><a href="https://forms.gle/f33XabwDSmzNCQja6">Careers</a></li>
               </ul>
             </div>
 

@@ -78,7 +78,7 @@ export default function Navbar() {
             <a href="#about">About Us</a>
           </li>
           <li className="hover:text-teal-600 cursor-pointer">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfSL4IEY99-mw1FqA3Bo9DSfi5N8nPtyWMgeg0lwgmU4JHGnQ/viewform">
+            <a href="https://forms.gle/f33XabwDSmzNCQja6">
               Career
             </a>
           </li>

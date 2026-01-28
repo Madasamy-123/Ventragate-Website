@@ -15,10 +15,10 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        "service_pgxvdi4",
-        "template_w95l0du",
+        "service_bn6dil3",
+        "template_6ispbh5",
         formRef.current,
-        "YjhVPzAE8zd-uI6lr"
+        "8Pw8d7lcBoLZbZ9-B"
       )
       .then(
         () => {
@@ -65,7 +65,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">EMAIL US</h3>
-                  <p className="text-gray-600">support@ventragate.com</p>
+                  <p className="text-gray-600">info.ventragate@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -79,7 +79,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">CALL US</h3>
-                  <p className="text-gray-600">+1 (806) 410 005</p>
+                  <p className="text-gray-600">+91 7339672322</p>
                 </div>
               </div>
             </div>
